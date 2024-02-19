@@ -72,11 +72,11 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "shell:build:production",
+							"buildTarget": "shell:build:production",
 							"extraWebpackConfig": "projects/shell/webpack.prod.config.js"
 						},
 						"development": {
-							"browserTarget": "shell:build:development"
+							"buildTarget": "shell:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
@@ -89,7 +89,7 @@
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
-						"browserTarget": "shell:build",
+						"buildTarget": "shell:build",
 						"extraWebpackConfig": "projects/shell/webpack.config.js"
 					}
 				},
@@ -178,19 +178,19 @@
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
-						"production": {
-							"browserTarget": "flights:build:production"
+            "production": {
+              "buildTarget": "flights:build:production"
 						},
-						"development": {
-							"browserTarget": "flights:build:development"
+            "development": {
+              "buildTarget": "flights:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "flights:build"
+          "options": {
+            "buildTarget": "flights:build"
 					}
 				},
 				"test": {
@@ -278,19 +278,19 @@
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
-						"production": {
-							"browserTarget": "cars:build:production"
+            "production": {
+              "buildTarget": "cars:build:production"
 						},
-						"development": {
-							"browserTarget": "cars:build:development"
+            "development": {
+              "buildTarget": "cars:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "cars:build"
+          "options": {
+            "buildTarget": "cars:build"
 					}
 				},
 				"test": {
@@ -378,19 +378,19 @@
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
-						"production": {
-							"browserTarget": "hotels:build:production"
+            "production": {
+              "buildTarget": "hotels:build:production"
 						},
-						"development": {
-							"browserTarget": "hotels:build:development"
+            "development": {
+              "buildTarget": "hotels:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "hotels:build"
+          "options": {
+            "buildTarget": "hotels:build"
 					}
 				},
 				"test": {
