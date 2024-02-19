@@ -10,7 +10,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "shell",
+    uniqueName: "cars",
     publicPath: "auto"
   },
   optimization: {
@@ -29,16 +29,20 @@ module.exports = {
         library: { type: "module" },
 
         // For remotes (please adjust)
-        // name: "shell",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './projects/shell/src/app/app.component.ts',
-        // },        
+        name: "cars",
+        filename: "remoteEntry.js",
+        exposes: {
+          './cars.module': './projects/cars/src/app/cars.module.ts',
+        },        
+             
         
         // For hosts (please adjust)
-        remotes: {
-            "flights": "http://localhost:4100/remoteEntry.js"
-        },
+        // remotes: {
+        //     "shell": "http://localhost:4200/remoteEntry.js",
+        //     "flights": "http://localhost:4100/remoteEntry.js",
+        //     "hotels": "http://localhost:4200/remoteEntry.js",
+
+        // },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
