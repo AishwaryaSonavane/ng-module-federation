@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run start:shell",
-    "start:shell": "ng serve --project=shell --port 4200",
+    "start:shell": "ng serve --project=shell --port 4000",
     "start:flights": "ng serve --project=flights --port 4100",
     "start:cars": "ng serve --project=cars --port 4300",
     "start:hotels": "ng serve --project=hotels --port 4400",
